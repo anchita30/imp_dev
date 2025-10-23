@@ -390,7 +390,7 @@ CMD ["java", "Factorial"]
 
 commands to be given in the terminal
 
-# docker build -t factorial-app
+# docker build -t factorial-app .
 # docker run -it factorial-app or docker run -i factorial-app
  
 done

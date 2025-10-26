@@ -613,10 +613,30 @@ sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debi
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | \
 sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 
+go to site: pkg.jenkins.io 
+go to debian stable
+for commands to install jenkins if the above give error 
+execute all commands
+
+for ec2 instance installation
+
 # sudo apt-get update
+# sudo apt-get install fontconfig openjdk-17-jre
 # sudo apt-get install jenkins
 # jenkins --version
 # sudo systemctl start jenkins.service or sudo systemctl start jenkins
+# sudo systemctl enable jenkins
+go to ec2 instance in the side bar go to security groups 
+click on the launchwizard id
+edit inbound rule
+add new rule
+ALL traffic
+anywhere ipv4
+done
+now go to browser 
+paste instance public ipv4 address:8080
+
+these all steps are for system installation so not useful dont do unless u cant using ec2 
 # sudo systemctl status jenkins
 adjust firewall and configure jenkins
 # sudo ufw status
